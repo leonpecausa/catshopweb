@@ -1,0 +1,96 @@
+body {
+    background-color: #f3eded;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-left, .header-right {
+    flex: 1;
+}
+.header-right {
+    text-align: right;
+}
+.header-center {
+    flex: 0;
+}
+.search-input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 180px;
+}
+.sesion {
+    display: inline-block;
+    padding: 8px 20px;
+    background: transparent;
+    color: #ffb6c1;
+    border: 2px solid #ffb6c1;
+    text-decoration: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sesion:hover {
+    background: #ffb6c1;
+    color: white;
+}
+
+.seccion-principal {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 2%;
+    gap: 20px;
+}
+.info-lateral, .espaciador-der {
+    width: 200px;
+    flex-shrink: 0;
+}
+.info-lateral {
+    background-color: #fff5f7;
+    padding: 20px;
+    border-radius: 12px;
+}
+.contenido-central {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.gama { margin: 10px 0; color: #333; }
+.comiendo { border-radius: 20px; max-width: 500px; width: 100%; margin: 20px 0; }
+
+.contenedor-productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card-producto {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.card-producto:hover { transform: translateY(-5px); }
+.precio { color: #ffb6c1; font-weight: bold; margin: 10px 0; }
+.btn-add { background: #ffb6c1; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
