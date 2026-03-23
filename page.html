@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="Styles.css">
-    <style>
-    body {
- font-family: 'Times New Roman', Times, serif;
- justify-content: center;
- display: flex;
- align-items: center;
- height : 100vh;
- margin: 0;
-}
-  </style>
+    <link rel="stylesheet" href="/diseño2.css">
 </head>
 <body>
-  <div class="login-container">
-    <h1>IniciarSesión</h1>
+  <div class="Login-container">
+    <h1>Iniciar Sesión</h1>
     <form action="procesar_login.php" method="post">
       <label for="usuario">ingrese su Nombre de Usuario</label>
       <input type="text" id="usuario" name="usuario" required>
 
       <label for="Contraseña">Ingrese su Contraseña</label>
-      <input type="Contraseña" id="Contraseña" name="Contraseña" required>
+      <input type="password" id="Contraseña" name="Contraseña" required>
 
       <button type="submit">Entrar</button>
     </form>
